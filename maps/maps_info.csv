@@ -1,0 +1,4 @@
+HOUSE_FILE,NUM_KEYS,NUM_TREASURES,SPAWN_ROW,SPAWN_COL
+house0.txt,2,2,2,3
+house1.txt,4,4,1,5
+houseR.txt,None,None,None,None
