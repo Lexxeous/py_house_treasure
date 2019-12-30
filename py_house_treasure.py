@@ -46,11 +46,22 @@ def main():
 	# Print the program command line arguments
 	print("\nProgram Name:", sys.argv[0])
 	print("Number of command line arguments:", len(sys.argv))
-	print("The command line argument(s) are:\n", str(sys.argv))
+	print("The command line argument(s) are:", str(sys.argv), '\n')
+
+	# Determine if we need to pull random house data or just the data about the file from the command line argument
+	if(sys.argv[1] == "houseR.txt"):
+		hfs = "house"
+		valid_rows = len(maps_df.index) - 1 # exclude the "houseR.txt" row
+		r_int = random.randint(0, valid_rows - 1) # remove the inclusivity of the "randint()" function on the upper bound
+		hfs += str(r_int)
+		hfs += ".txt"
+		chosen_map = hfs
+	else:
+		chosen_map = sys.argv[1]
 
 	# Get the correct house (map) data
 	for idx, row in maps_df.iterrows():
-		if(row["HOUSE_FILE"] == sys.argv[1]):
+		if(row["HOUSE_FILE"] == chosen_map):
 			map_data = maps_df.iloc[idx,:]
 			print(map_data)
 
