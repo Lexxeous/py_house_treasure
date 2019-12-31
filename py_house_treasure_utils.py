@@ -42,7 +42,6 @@ def print_keys(keys):
 		print("No keys collected...", end='')
 
 
-
 def room(h, sr, sc):
 	if(h[sr][sc] == '*'): return False
 	else: return True

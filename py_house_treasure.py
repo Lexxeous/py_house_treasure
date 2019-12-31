@@ -5,14 +5,11 @@
 Title: py_house_treasure.py
 Author(s): Jonathan A. Gibson
 Description:
-
 Goals:
   1. Be able to play multiple different house maps. Store all in "maps" directory with set CSV info to import.
   2. Let user choose the house map at the command line, or choose to play a random map.
   3. Display the key array to the user based on the total number of keys, not all 5 if there are not 5 keys on the map.
   4. Display the key inventory in a more friendly way rather than just a 0-based array.
-  5. 
-  6. 
 Notes:
   > 
 """
