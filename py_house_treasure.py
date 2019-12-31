@@ -94,7 +94,8 @@ def main():
 
 	while(t_count < num_treasures):
 		command = input("Move: ").upper()
-		print("Keys:", keys)
+		phtu.print_keys(keys)
+		print("\nTreasure:", str(t_count) + '/' + str(num_treasures))
 
 		# Reset the travel indices
 		trav_r = cur_r

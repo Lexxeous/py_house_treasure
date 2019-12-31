@@ -31,6 +31,18 @@ def print_house(h, sr, sc): # house, row, col
 	print("\n")
 
 
+def print_keys(keys):
+	at_least_one_k = False
+	print("Keys:", end=' ')
+	for k in range(0, len(keys)):
+		if(keys[k] == True):
+			print(str(k) + ", ", end='')
+			at_least_one_k = True
+	if(not at_least_one_k):
+		print("No keys collected...", end='')
+
+
+
 def room(h, sr, sc):
 	if(h[sr][sc] == '*'): return False
 	else: return True
